@@ -16,11 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from demoApp import views
+from demoApp import views as v1
+from timeApp import views as v2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('gm/', views.gm_view),
-    path('ge/', views.ge_view),
-    path('gn/', views.gn_view),
+    path('gm/', v1.gm_view),
+    path('ge/', v1.ge_view),
+    path('gn/', v1.gn_view),
+    path('time/', v2.tellMeTime),
 ]
