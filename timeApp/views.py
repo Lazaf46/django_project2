@@ -6,3 +6,6 @@ import datetime
 def tellMeTime(request):
     time = datetime.datetime.now()
     return HttpResponse('<h1> Hii, Now The time is : '+str(time)+' </h1>')
+
+def time(request):
+    return HttpResponse("ewdsx")
